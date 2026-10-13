@@ -1,0 +1,237 @@
+/* Super Mario Theme */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        #5ecbff 0%,
+        #5ecbff 70%,
+        #72c947 70%,
+        #72c947 100%
+    );
+}
+
+/* Main Box */
+.container {
+    width: 90%;
+    max-width: 600px;
+    padding: 35px;
+
+    background: #ffffff;
+
+    border: 6px solid #e52521;
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 0 #b71c1c,
+        0 15px 25px rgba(0, 0, 0, 0.3);
+
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    font-size: 32px;
+    font-weight: 900;
+
+    color: #e52521;
+
+    text-shadow: 2px 2px 0 #ffd92f;
+}
+
+/* Label */
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Name Input */
+input {
+    margin: 0 6px;
+    padding: 10px 12px;
+
+    width: 190px;
+
+    font-size: 16px;
+
+    border: 3px solid #333;
+    border-radius: 8px;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #e52521;
+    box-shadow: 0 0 0 3px #ffd92f;
+}
+
+/* Buttons */
+button {
+    margin-left: 5px;
+    padding: 10px 18px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    color: white;
+    background: #e52521;
+
+    border: 3px solid #333;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 0 #9e1714;
+
+    transition: 0.15s;
+}
+
+/* Hover */
+button:hover {
+    background: #ff3b30;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #9e1714;
+}
+
+/* Click */
+button:active {
+    transform: translateY(3px);
+    box-shadow: 0 1px 0 #9e1714;
+}
+
+/* Make Load button different */
+button:last-child {
+    background: #2478d7;
+    box-shadow: 0 4px 0 #15509a;
+}
+
+button:last-child:hover {
+    background: #3590f5;
+}/* Super Mario Theme */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        #5ecbff 0%,
+        #5ecbff 70%,
+        #72c947 70%,
+        #72c947 100%
+    );
+}
+
+/* Main Box */
+.container {
+    width: 90%;
+    max-width: 600px;
+    padding: 35px;
+
+    background: #ffffff;
+
+    border: 6px solid #e52521;
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 0 #b71c1c,
+        0 15px 25px rgba(0, 0, 0, 0.3);
+
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    font-size: 32px;
+    font-weight: 900;
+
+    color: #e52521;
+
+    text-shadow: 2px 2px 0 #ffd92f;
+}
+
+/* Label */
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Name Input */
+input {
+    margin: 0 6px;
+    padding: 10px 12px;
+
+    width: 190px;
+
+    font-size: 16px;
+
+    border: 3px solid #333;
+    border-radius: 8px;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #e52521;
+    box-shadow: 0 0 0 3px #ffd92f;
+}
+
+/* Buttons */
+button {
+    margin-left: 5px;
+    padding: 10px 18px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    color: white;
+    background: #e52521;
+
+    border: 3px solid #333;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 0 #9e1714;
+
+    transition: 0.15s;
+}
+
+/* Hover */
+button:hover {
+    background: #ff3b30;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #9e1714;
+}
+
+/* Click */
+button:active {
+    transform: translateY(3px);
+    box-shadow: 0 1px 0 #9e1714;
+}
+
+/* Make Load button different */
+button:last-child {
+    background: #2478d7;
+    box-shadow: 0 4px 0 #15509a;
+}
+
+button:last-child:hover {
+    background: #3590f5;
+}

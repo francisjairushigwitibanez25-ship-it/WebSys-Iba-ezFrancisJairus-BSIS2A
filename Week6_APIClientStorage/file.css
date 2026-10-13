@@ -1,0 +1,311 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0d0d0f;
+    color: white;
+    min-height: 100vh;
+}
+
+.container {
+    width: 86%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 45px 0 80px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 38px;
+}
+
+.header h1 {
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.header h2 {
+    font-size: 22px;
+    margin-top: 12px;
+    color: #eeeeee;
+}
+
+.header p {
+    color: #999;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.sign-in {
+    background: #292a32;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sign-in:hover {
+    background: #444650;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   SECTION TITLES
+========================= */
+
+.section-title {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.section-subtitle {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   WEBSITE GRID
+========================= */
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 22px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.website-card {
+    min-height: 245px;
+    padding: 25px;
+    border-radius: 9px;
+    text-decoration: none;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: relative;
+    overflow: hidden;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+/* First two cards are larger */
+.website-card:nth-child(1),
+.website-card:nth-child(2) {
+    grid-column: span 3;
+}
+
+
+/* Last three cards */
+.website-card:nth-child(3),
+.website-card:nth-child(4),
+.website-card:nth-child(5) {
+    grid-column: span 2;
+}
+
+
+/* Hover effect */
+.website-card:hover {
+    transform: translateY(-7px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+}
+
+
+/* Dark overlay */
+.website-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.05)
+    );
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   CARD COLORS
+========================= */
+
+.local-storage {
+    background: linear-gradient(135deg, #7442f4, #a634a8);
+}
+
+.user-preferences {
+    background: linear-gradient(135deg, #3000cc, #ffffff);
+}
+
+.weather {
+    background: linear-gradient(135deg, #ff0000, #8b0000);
+}
+
+.map {
+    background: linear-gradient(135deg, #0ab2fa, #00fd69);
+}
+
+.github {
+    background: linear-gradient(135deg, #333, #111);
+}
+
+
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.card-content {
+    position: relative;
+    z-index: 2;
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 12px;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    margin-bottom: 18px;
+
+    backdrop-filter: blur(5px);
+}
+
+.card-content h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #e5e5e5;
+    max-width: 380px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   VISIT BUTTON
+========================= */
+
+.visit {
+    position: relative;
+    z-index: 2;
+
+    display: inline-block;
+    width: fit-content;
+
+    padding: 8px 14px;
+
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.website-card:hover .visit {
+    background: white;
+    color: black;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .featured-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .website-card:nth-child(1),
+    .website-card:nth-child(2),
+    .website-card:nth-child(3),
+    .website-card:nth-child(4),
+    .website-card:nth-child(5) {
+        grid-column: span 1;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .header {
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .header h2 {
+        font-size: 18px;
+    }
+
+    .sign-in {
+        padding: 12px 20px;
+    }
+
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .website-card:nth-child(1),
+    .website-card:nth-child(2),
+    .website-card:nth-child(3),
+    .website-card:nth-child(4),
+    .website-card:nth-child(5) {
+        grid-column: span 1;
+    }
+}
